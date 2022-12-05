@@ -1,0 +1,20 @@
+#include<stdio.h>
+
+int main() {
+    float diem;
+    printf ("Nhap diem cua hoc sinh: ");
+    scanf ("%f", &diem);
+    if(diem >= 9){
+        printf ("\n Xuat sac", diem);
+    }else if(diem >= 8){
+        printf ("\n Gioi", diem);
+    }else if(diem >= 7){
+        printf ("\n Kha", diem);
+    }else if(diem >= 6){
+        printf ("\n Trung binh kha", diem);
+    }else if(diem >= 5){
+        printf ("\n Trung binh",diem);
+    }else{
+        printf ("\n Yeu", diem);
+    }
+}
