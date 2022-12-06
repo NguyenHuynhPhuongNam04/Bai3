@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main() {
+    int so1, so2; // khai báo biến
+    char Kytu; // khai báo ký tự
+    printf("\nNhap phep toan: ");
+    scanf("%c", &Kytu);// lệnh nhập vào ký tự
+ 
+    printf("\nNhap vao 2 so: ");
+    scanf("%d%d", &so1, &so2);// lệnh nhập vào 2 số
+ 
+    switch (Kytu) // lệnh lựa chọn 
+    {
+    case '+': // ký tự +
+        printf("%d + %d = %d", so1, so2, so1 + so2); // hiển thị tổng hai số
+        break;
+    case '-': // ký tự -
+        printf("%d - %d = %d", so1, so2, so1 - so2);// hiển thị hiệu hai số
+        break;
+    
+ 
+    default:
+    printf("Vui lòng nhập + hoặc -", Kytu);
+        break;
+    }
+}
