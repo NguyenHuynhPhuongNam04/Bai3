@@ -1,20 +1,21 @@
 #include<stdio.h>
 
 int main() {
+    // Khai báo biến
     float diem;
     printf ("Nhap diem cua hoc sinh: ");
-    scanf ("%f", &diem);
-    if(diem >= 9){
-        printf ("\n Xuat sac", diem);
-    }else if(diem >= 8){
-        printf ("\n Gioi", diem);
-    }else if(diem >= 7){
-        printf ("\n Kha", diem);
-    }else if(diem >= 6){
-        printf ("\n Trung binh kha", diem);
-    }else if(diem >= 5){
-        printf ("\n Trung binh",diem);
-    }else{
-        printf ("\n Yeu", diem);
+    scanf ("%f", &diem);// lệnh để nhập điểm
+    if(diem >= 9){ // nếu điểm lớn hơn hoặc bằng 9
+        printf ("\n Xuat sac", diem);// hiển thị Xuất sắc
+    }else if(diem >= 8){ //nếu điểm lớn hơn hoặc bằng 8
+        printf ("\n Gioi", diem); // hiển thị Giỏi
+    }else if(diem >= 7){ //nếu điểm lớn hơn hoặc bằng 7
+        printf ("\n Kha", diem); // hiển thị Khá
+    }else if(diem >= 6){ //nếu điểm lớn hơn hoặc bằng 6
+        printf ("\n Trung binh kha", diem); //hiển thị Trung bình khá
+    }else if(diem >= 5){ //nếu điểm lớn hơn hoặc bằng 5
+        printf ("\n Trung binh",diem); // hiển thị Trung bình
+    }else{ // nếu điểm từ 0 đến bé hơn 5
+        printf ("\n Yeu", diem);// hiển thị Yếu
     }
 }
